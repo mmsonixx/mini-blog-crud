@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": "132643",
+      "title": "Monster Energy Original Green “OG”",
+      "description": "Flavor ProfileSweet and Salty - It tastes like Monster! It’s the ideal combo of the right ingredients in the right proportions to deliver the big bad buzz only Monster can. ",
+      "img": "https://web-assests.monsterenergy.com/mnst/f6dadd8b-12d1-4318-9167-1b83e9caa9c9.png",
+      "category": "energy"
+    },
+    {
+      "id": "2r325",
+      "title": "Monster Ultra Zero Ultra 'White Monster'",
+      "description": "Flavor ProfileLight Refreshing Citrus.",
+      "img": "https://web-assests.monsterenergy.com/mnst/3214808a-90a7-474d-9cc5-7f495eae23de.png",
+      "category": "energy"
+    },
+    {
+      "title": " Mean Bean",
+      "img": "https://web-assests.monsterenergy.com/mnst/25ba7d1a-5df2-4199-9510-4b1d98c496f9.webp",
+      "description": "Flavor ProfileVanilla Bean. Smooth vanilla bean flavor fused with real coffee and cream. A classic coffee energy drink with bold taste and the Monst.er Energy blend to power your grind. ",
+      "category": "java",
+      "id": "S3qCJu56_aY"
+    },
+    {
+      "title": "Pipeline Punch",
+      "img": "https://web-assests.monsterenergy.com/mnst/6aa8ff45-fcd8-4c9d-b2b2-d15a69a1d465.png",
+      "description": "Flavor ProfilePassion Fruit, Orange, and Guava.Passion fruit, orange, and guava collide in this tropical-flavored energy drink",
+      "category": "juice",
+      "id": "MlR2MWMuuPc"
+    }
+  ],
+  "users": [
+    {
+      "id": "D23fds5",
+      "name": "Sonya",
+      "password": "FE34dot",
+      "img": "https://tse3.mm.bing.net/th/id/OIP.7uwi6GfkvIOVTTDWToHD-QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
