@@ -1,4 +1,4 @@
-4234
+4237
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\mediasource.js134360419592172731 0
 113C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\date-tolocaledatestring.js134360419585268806 0
 130C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\LICENSE134360419572983147 0
@@ -6,7 +6,7 @@
 115C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\watcher\node_modules\detect-libc\lib\process.js134360419575431897 0
 50C:\Users\Sofia\Desktop\projects\mini-blog-crud\src134363797311779711 1
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\packager-js\lib\dev-prelude.js134360419574897126 0
-54C:\Users\Sofia\Desktop\projects\mini-blog-crud\db.json134363819505604112 0
+54C:\Users\Sofia\Desktop\projects\mini-blog-crud\db.json134363879777221853 0
 82C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\to-regex-range\LICENSE134360421058860817 0
 71C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\monster-logo.png134363138727204630 0
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\css-sel3.js134360419584530573 0
@@ -22,7 +22,7 @@
 69C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\users134360441281478641 1
 121C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\workers\test\integration\workerfarm\reverse-handle.js134360419579006085 0
 81C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\universalify\index.js134360421058771589 0
-51C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist134363836327141481 1
+51C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist134363891609511306 1
 100C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\profiler\lib\SamplingProfiler.js134360419575143960 0
 79C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\drinks\lando-norris.webp134363750772827044 0
 92C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\term-size\vendor\macos\.DS_Store134360419574155890 0
@@ -69,11 +69,11 @@
 67C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\pkg-dir134360421059120786 1
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_read_only_error134360419584821864 1
 105C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_class_call_check\package.json134360419583633501 0
-62C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\drinks.html134363836326838087 0
+62C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\drinks.html134363875601781179 0
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\push-api.js134360419594751156 0
 84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\picocolors\picocolors.js134360419574059334 0
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\regions\BJ.js134360419580361435 0
-54C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img134363153039225161 1
+54C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img134363888151813650 1
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\regions\MA.js134360419591605405 0
 61C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\index.html134363802688428089 0
 121C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\ordered-binary\.claude\worktrees\bun-finishutf8\tests\test.js134360419577030228 0
@@ -88,7 +88,7 @@
 104C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_define_property\package.json134360419584275820 0
 120C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lightningcss-win32-x64-msvc\lightningcss.win32-x64-msvc.node134360419580160054 0
 78C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\tslib\tslib.es6.js134360419574638803 0
-70C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\croco.0225a943.png134363831730006273 0
+70C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\croco.0225a943.png134363891096974515 0
 102C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\font-loading.js134360419586711384 0
 66C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\markup\users134360440529632325 1
 81C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\utility-types\LICENSE134360419572796741 0
@@ -100,15 +100,20 @@
 108C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\node_modules\node-addon-api\tools\README.md134360419577727609 0
 104C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\workers\src\process\ProcessWorker.js134360419578835004 0
 103C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\object-values.js134360419593609173 0
-69C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts134360456430334004 1
+69C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts134363838525688497 1
 76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\json5\LICENSE.md134360419577035336 0
-83C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts\addNewPost.js134363834206982625 0
+83C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts\addNewPost.js134363864093271337 0
+85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-svg\lib134360419573715828 1
+85C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts\addPostModal.js134363852758157926 0
+115C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\node_modules\node-addon-api\tools\eslint-format.js134360419577132350 0
+94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-addon-api\tools\conversion.js134360419577067492 0
+96C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_async_iterator.mjs134360419585477547 0
 72C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite134360419600343481 1
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\temporal.js134360419597379504 0
 105C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\background-sync.js134360419580013342 0
 77C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\path-type\license134360421058986896 0
 79C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\async\reflectAll.js134360421061196070 0
-83C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts\renderPage.js134362133916155049 0
+83C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\operation\posts\renderPage.js134363853101465949 0
 77C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\dir-glob\index.js134360421058781573 0
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\parcel\src\.eslintrc.json134360419575683381 0
 86C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-html\lib134360419573715828 1
@@ -153,7 +158,7 @@
 118C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\ordered-binary\.claude\worktrees\bun-finishutf8\index.d.ts134360419578439001 0
 78C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\api\posts\getPostsApi.js134360449407054044 0
 112C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\contentsecuritypolicy2.js134360419581481614 0
-64C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\css\index.css134363831728312243 0
+64C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\css\index.css134363891608960993 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\ol-reversed.js134360419593695145 0
 95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\dependencies\lz4\lib\lz4file.h134360419581728109 0
 127C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-json5134360419577000756 0
@@ -161,6 +166,10 @@
 81C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\js\api\posts\updatePostsApi.js134362136639212003 0
 102C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_object_spread\package.json134360419584761775 0
 71C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\glob-parent134360421059095374 1
+103C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\pad-start-end.js134360419593820937 0
+83C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\micromatch\node_modules134360421057424058 1
+85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\run-parallel\package.json134360421058871419 0
+62C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\cat.gif134363887942166032 0
 104C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\css-snappoints.js134360419584565743 0
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\test\urlJoin.test.js134360419580196372 0
 93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\semver\functions\compare-build.js134360419575741760 0
@@ -171,7 +180,7 @@
 64C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\croco.png134362153726501040 0
 86C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\types\package.json134360419574177552 0
 66C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\semver134360419579333625 1
-61C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\drinks134363776039253001 1
+61C:\Users\Sofia\Desktop\projects\mini-blog-crud\src\img\drinks134363883720768581 1
 76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src134360419586677590 1
 66C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@lezer134360419566408418 1
 92C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\settings.js134360421059337926 0
@@ -228,14 +237,6 @@
 113C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\gh-pages\node_modules\commander\lib\suggestSimilar.js134360421059480639 0
 71C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\ansi-styles134360419574741897 1
 77C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fs-extra\lib\move134360421059964935 1
-105C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules134360419566480504 1
-84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\semver\classes\semver.js134360419579030573 0
-70C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\color-name134360419574416017 1
-76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\src\dbi.cpp134360419581172365 0
-97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fast-glob\out\providers\provider.d.ts134360421060596097 0
-84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\async\applyEachSeries.js134360421059437765 0
-89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\dependencies\lz4\LICENSE134360419577630272 0
-95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\type-fest\source\tsconfig-json.d.ts134360419578881836 0
 97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\datauri.js134360419585248813 0
 76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\index.d.cts134360419581374863 0
 71C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\array-union134360421059095374 1
@@ -253,6 +254,14 @@
 102C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\bin\download-prebuilds.js134360419574648854 0
 65C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\chalk134360419575653281 1
 109C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_class_check_private_static_access134360419583645843 1
+105C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules134360419566480504 1
+84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\semver\classes\semver.js134360419579030573 0
+70C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\color-name134360419574416017 1
+76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\src\dbi.cpp134360419581172365 0
+97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fast-glob\out\providers\provider.d.ts134360421060596097 0
+84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\async\applyEachSeries.js134360421059437765 0
+89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\dependencies\lz4\LICENSE134360419577630272 0
+95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\type-fest\source\tsconfig-json.d.ts134360419578881836 0
 125C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\LICENSE134360419572983147 0
 106C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\micromatch\node_modules\picomatch\lib\parse.js134360421059167567 0
 78C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\has-flag\readme.md134360419574832401 0
@@ -803,8 +812,8 @@
 111C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_class_private_field_loose_key.mjs134360419585673611 0
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\type-fest\source\set-required.d.ts134360419578679080 0
 96C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\beacon.js134360419580160054 0
-93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\wav.js134360419599377570 0
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\download.js134360419585930142 0
+93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\wav.js134360419599377570 0
 117C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest6.c134360419580980486 0
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-css\lib134360419573742209 1
 88C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\ordered-binary\tests\test.js134360419577152501 0
@@ -1085,9 +1094,6 @@
 90C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\bin\download-prebuilds.js134360419582148122 0
 81C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\run-parallel\index.js134360421058761482 0
 140C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\node-gyp-build.js134360419574919233 0
-103C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\pad-start-end.js134360419593820937 0
-83C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\micromatch\node_modules134360421057424058 1
-85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\run-parallel\package.json134360421058871419 0
 70C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\parcel\lib134360419574811386 1
 115C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_class_check_private_static_access.mjs134360419585595309 0
 83C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\fs\package.json134360419577000756 0
@@ -1116,7 +1122,6 @@
 108C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_object_destructuring_empty.mjs134360419586244339 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\.bin\node-gyp-build-optional-packages.cmd134360419600629570 0
 106C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\node_modules\node-addon-api\noexcept.gypi134360419574832401 0
-127C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\README.md134360419575811325 0
 87C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\regenerator-runtime\LICENSE134360419572811876 0
 92C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\regenerator-runtime\package.json134360419574585486 0
 103C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\localecompare.js134360419591287168 0
@@ -1224,7 +1229,6 @@
 99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\gh-pages\node_modules\commander\LICENSE134360421058678252 0
 86C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\picocolors\picocolors.d.ts134360419575092666 0
 93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\eot.js134360419586140989 0
-99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\providers\async.js134360421058811638 0
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\regions\BF.js134360419580218186 0
 109C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\runtime-js\lib\helpers\node\css-loader.js134360419576077138 0
 80C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\picocolors\README.md134360419574832401 0
@@ -1347,6 +1351,7 @@
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\package-manager\LICENSE134360419572970565 0
 113C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\css-hanging-punctuation.js134360419582877897 0
 128C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\index.d.ts134360419575969020 0
+127C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\README.md134360419575811325 0
 136C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\lib\detect-libc.js134360419573960316 0
 95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\test\throttle.test.js134360419580149464 0
 76C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fastq\example.js134360421058986896 0
@@ -1389,9 +1394,6 @@
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\xhr2.js134360419599911596 0
 75C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\detect-libc\bin134360419574940083 1
 111C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\detect-libc\README.md134360419575811325 0
-115C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\node_modules\node-addon-api\tools\eslint-format.js134360419577132350 0
-94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\node-addon-api\tools\conversion.js134360419577067492 0
-96C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_async_iterator.mjs134360419585477547 0
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\regions\JE.js134360419589932289 0
 68C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\lmdb\bin134360419582138155 1
 99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_class_private_field_get134360419583871571 1
@@ -1401,7 +1403,7 @@
 89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.scandir\out\types134360421059812013 1
 80C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\bin134360419574595512 1
 97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\colr-v1.js134360419581283397 0
-75C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\bad-apple.9904dde0.webp134363831730607278 0
+75C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\bad-apple.9904dde0.webp134363891096351333 0
 96C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\esm\_sliced_to_array.js134360419582148122 0
 121C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\package-manager\test\validateModuleSpecifiers.test.js134360419578400475 0
 84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\LICENSE134360419572756745 0
@@ -1443,7 +1445,7 @@
 112C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\detect-libc\lib\elf.js134360419574562106 0
 88C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.walk\out\readers134360421060021708 1
 106C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\wasm-multi-value.js134360419599210006 0
-79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\white-monster.041322d3.webp134363831731689258 0
+79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\white-monster.041322d3.webp134363891096564403 0
 110C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\transformer-react-refresh-wrap\lib\helpers134360419573811190 1
 119C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\detect-libc\lib\filesystem.js134360419575070598 0
 116C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\msgpackr-extract\node_modules\detect-libc\lib\process.js134360419575393125 0
@@ -1786,9 +1788,9 @@
 115C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_apply_decorated_descriptor\package.json134360419582713266 0
 81C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\json5\lib\register.js134360419575958924 0
 80C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\json5\lib\require.js134360419576250508 0
-84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\json5\lib\stringify.d.ts134360419577843520 0
-74C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fastq\bench.js134360421058761482 0
 75C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fs-extra\lib\fs134360421059551573 1
+74C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fastq\bench.js134360421058761482 0
+84C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\json5\lib\stringify.d.ts134360419577843520 0
 90C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fs-extra\lib\copy\copy-sync.js134360421059055402 0
 82C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\commondir\package.json134360421058664255 0
 96C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\source-map\dist\node.js.flow134360419573056179 0
@@ -1994,7 +1996,7 @@
 79C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\_\_jsx134360419584680927 1
 79C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\.bin\gh-pages-clean134360421062017339 0
 89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fast-glob\out\readers\sync.js134360421060160625 0
-81C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\dubai-chocolate.93d01001.webp134363831729949619 0
+81C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\dubai-chocolate.93d01001.webp134363891096564403 0
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fast-glob\out\providers\async.d.ts134360421060241648 0
 92C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\fast-glob\out\providers\async.js134360421059045281 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\esm\_wrap_async_generator.js134360419582543831 0
@@ -2174,7 +2176,7 @@
 83C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\color-convert\README.md134360419575169063 0
 117C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_class_static_private_field_spec_get.mjs134360419585774890 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\features\css-regions.js134360419584343199 0
-63C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\drinks.html134363836327121391 0
+63C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\drinks.html134363891096326955 0
 75C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\clone\clone.iml134360419575213211 0
 107C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\resolver-default\lib\DefaultResolver.js134360419573821893 0
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\caniuse-lite\data\regions\NI.js134360419593245424 0
@@ -3288,7 +3290,7 @@
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_jsx.mjs134360419586205456 0
 97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\test\objectHash.test.js134360419579476703 0
 99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_non_iterable_rest.mjs134360419586230536 0
-82C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.31b563d9.js.map134363835502572174 0
+82C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.31b563d9.js.map134363891096543967 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_non_iterable_spread.mjs134360419586244339 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_object_spread_props.mjs134360419586259217 0
 105C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\watcher\src\windows\WindowsBackend.cc134360419578014147 0
@@ -3296,7 +3298,7 @@
 107C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_object_without_properties.mjs134360419586298600 0
 113C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_object_without_properties_loose.mjs134360419586283596 0
 109C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_possible_constructor_return.mjs134360419586308715 0
-79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.3092e1e0.css134363831732651772 0
+79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.3092e1e0.css134363891609433519 0
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_set.mjs134360419586343331 0
 107C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_skip_first_generator_next.mjs134360419586353442 0
 97C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@swc\helpers\src\_super_prop_base.mjs134360419586380433 0
@@ -3661,7 +3663,7 @@
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\src\path.js134360419579563818 0
 98C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\transformer-babel\src\types.js134360419577823566 0
 93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\src\prettifyTime.js134360419579603113 0
-89C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\monster-energy-original.d9a3c2bd.webp134363831730655800 0
+89C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\monster-energy-original.d9a3c2bd.webp134363891096336946 0
 93C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\src\PromiseQueue.js134360419579721659 0
 99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\src\relativeBundlePath.js134360419579790019 0
 104C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\utils\src\replaceBundleReferences.js134360419579842976 0
@@ -3918,7 +3920,6 @@
 100C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\package-manager\lib\index.js.map134360419579297180 0
 89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-swc\LICENSE134360419572955813 0
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-swc\package.json134360419574701400 0
-85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-svg\lib134360419573715828 1
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-svg\package.json134360419574690662 0
 85C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\optimizer-svg\src134360419574218613 1
 94C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@parcel\core\lib\RequestTracker.js134360419581599160 0
@@ -4154,6 +4155,7 @@
 86C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\types134360421059636530 1
 95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\types\index.js134360421059276329 0
 101C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\providers\async.d.ts134360421059526100 0
+99C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\providers\async.js134360421058811638 0
 100C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\providers\sync.d.ts134360421059700909 0
 95C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.stat\out\adapters\fs.js134360421059055402 0
 89C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\@nodelib\fs.scandir\README.md134360421059636530 0
@@ -4224,12 +4226,13 @@
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\.bin\update-browserslist-db.cmd134360419600644322 0
 91C:\Users\Sofia\Desktop\projects\mini-blog-crud\node_modules\.bin\update-browserslist-db.ps1134360419600644322 0
 102C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\3214808a-90a7-474d-9cc5-7f495eae23de.550110cd.webp134363156269810284 0
+68C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\cat.d360da9d.gif134363891096800744 0
 70C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\croco.b8d89e7e.jpg134362151649615278 0
-62C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\index.html134363831733344710 0
-78C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\lando-norris.3ee2cfd2.webp134363831731631917 0
-76C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mango-loco.51569bc1.webp134363831729977873 0
-79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.008b0dfe.css134363831733486601 0
-83C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.008b0dfe.css.map134363831733486601 0
-83C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.3092e1e0.css.map134363831732681757 0
-78C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.31b563d9.js134363835502531618 0
-77C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\monster-logo.fc60c308.png134363831731645251 0
+62C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\index.html134363891096326955 0
+78C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\lando-norris.3ee2cfd2.webp134363891096273979 0
+76C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mango-loco.51569bc1.webp134363891097305592 0
+79C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.008b0dfe.css134363891096273979 0
+83C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.008b0dfe.css.map134363891096543967 0
+83C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.3092e1e0.css.map134363891609489957 0
+78C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\mini-blog-crud.31b563d9.js134363891096273979 0
+77C:\Users\Sofia\Desktop\projects\mini-blog-crud\dist\monster-logo.fc60c308.png134363891096543967 0
