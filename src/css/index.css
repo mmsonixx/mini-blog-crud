@@ -221,10 +221,7 @@ width: 105%;
     100% 100%,
     0 100%
   );
-  background-image: url("../img/cat.gif");
-  background-repeat: no-repeat;
- background-position: 90% 67%;
- background-size: 30%;
+ 
 }
 
 .footer__container {

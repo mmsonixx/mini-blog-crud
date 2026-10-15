@@ -21,10 +21,8 @@
     "predeploy": "npm run build",
     "server": "npx json-server db.json"
   },
-  "dependencies": {
-    "gh-pages": "^6.3.0"
-  },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.16.4"
   }
 }

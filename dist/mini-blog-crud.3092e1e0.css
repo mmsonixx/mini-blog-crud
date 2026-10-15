@@ -184,7 +184,7 @@ header .header__content .logo__container .logo:after {
 .footer {
   color: #fff;
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-  background: #050705 url("cat.d360da9d.gif") 90% 67% / 30% no-repeat;
+  background: #050705;
   width: 105%;
   margin-top: 100px;
   padding: 70px 40px 30px;

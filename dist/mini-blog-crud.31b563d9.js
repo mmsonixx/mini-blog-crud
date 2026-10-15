@@ -736,7 +736,7 @@ const renderPage = async ()=>{
     await startEvents();
 };
 
-},{"./renderPosts":"lY636","./addNewPost":"4YkMW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./addPostModal":"ios1X"}],"lY636":[function(require,module,exports,__globalThis) {
+},{"./renderPosts":"lY636","./addNewPost":"4YkMW","./addPostModal":"ios1X","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lY636":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderPosts", ()=>renderPosts);
