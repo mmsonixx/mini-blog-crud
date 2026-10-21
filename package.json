@@ -19,10 +19,16 @@
     "build": "parcel build src/index.html --public-url /mini-blog-crud/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "server": "npx json-server db.json"
+    "server": "npx json-server db.json",
+    "sass-compile": "sass src/sass/main.scss dist/css/style.css",
+    "sass-watch": "sass --watch src/sass/main.scss dist/css/style.css"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
     "gh-pages": "^6.3.0",
     "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "sass": "^1.105.1"
   }
 }

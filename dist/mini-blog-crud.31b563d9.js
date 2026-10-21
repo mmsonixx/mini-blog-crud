@@ -715,20 +715,34 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"a0t4e":[function(require,module,exports,__globalThis) {
 var _renderPage = require("./js/operation/posts/renderPage");
+var _renderUsers = require("./js/operation/users/renderUsers");
 (0, _renderPage.renderPage)();
+(0, _renderUsers.renderUsersPage)();
 
-},{"./js/operation/posts/renderPage":"kE3Os"}],"kE3Os":[function(require,module,exports,__globalThis) {
+},{"./js/operation/posts/renderPage":"kE3Os","./js/operation/users/renderUsers":"2Hgdr"}],"kE3Os":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderPage", ()=>renderPage);
 var _renderPosts = require("./renderPosts");
 var _addNewPost = require("./addNewPost");
 var _addPostModal = require("./addPostModal");
+var _editMode = require("./editMode");
+var _deletePost = require("./deletePost");
+var _editPost = require("./editPost");
 const startEvents = ()=>{
     const form = document.querySelector("[data-addPost-form]");
     const closeModal = (0, _addPostModal.startModalEvents)();
+    (0, _editMode.startEditMode)();
+    (0, _editPost.startPostEditing)();
     form.addEventListener("submit", (event)=>{
         (0, _addNewPost.addPost)(event, closeModal);
+    });
+    document.addEventListener("click", (event)=>{
+        const deleteBtn = event.target.closest(".posts__delete");
+        if (!deleteBtn) return;
+        const postItem = deleteBtn.closest(".posts__item");
+        if (!postItem) return;
+        (0, _deletePost.deletePost)(postItem.dataset.postId);
     });
 };
 const renderPage = async ()=>{
@@ -736,7 +750,7 @@ const renderPage = async ()=>{
     await startEvents();
 };
 
-},{"./renderPosts":"lY636","./addNewPost":"4YkMW","./addPostModal":"ios1X","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lY636":[function(require,module,exports,__globalThis) {
+},{"./renderPosts":"lY636","./addNewPost":"4YkMW","./addPostModal":"ios1X","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./editMode":"2vINJ","./deletePost":"8UWvu","./editPost":"fiKh9"}],"lY636":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderPosts", ()=>renderPosts);
@@ -809,18 +823,46 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "makePostsList", ()=>makePostsList);
 const makePostsList = (posts)=>{
-    console.log(posts);
-    const postsHtml = posts.map((post)=>` <li class="posts__item">
-        <div class="posts__card">
-      <div class="posts__front">
-    <img src="${post.img}" alt="" class="posts__img">
-      </div>
-       <div class="posts__back">
-    <h2 class="posts__title">${post.title}</h2>
-    <p class="posts__description">${post.description}</p>
-      </div>
-       </div>
-</li>`).join("");
+    const postsHtml = posts.map((post)=>`
+        <li
+          class="posts__item"
+  data-post-id="${post.id}"
+  data-post-img="${post.img}"
+  data-post-category="${post.category}"
+        >
+       <label class="posts__change-img">
+  Photo
+  <input
+    type="file"
+    class="posts__img-input"
+    accept="image/*"
+    hidden
+  >
+</label>
+          <button class="posts__edit" type="button" aria-label="Edit">
+            \u{270E}
+          </button>
+
+          <button class="posts__delete" type="button" aria-label="Delete">
+            &times;
+          </button>
+
+          <button class="posts__save" type="button">
+           Save
+          </button>
+
+          <div class="posts__card">
+            <div class="posts__front">
+              <img src="${post.img}" alt="${post.title}" class="posts__img">
+            </div>
+
+            <div class="posts__back">
+              <h2 class="posts__title">${post.title}</h2>
+              <p class="posts__description">${post.description}</p>
+            </div>
+          </div>
+        </li>
+      `).join("");
     return postsHtml;
 };
 
@@ -900,6 +942,320 @@ const startModalEvents = ()=>{
     return closeModal;
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire4c9f", {})
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2vINJ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "startEditMode", ()=>startEditMode);
+const startEditMode = ()=>{
+    const editModeBtn = document.querySelector(".posts__edit-mode");
+    editModeBtn.addEventListener("click", ()=>{
+        document.body.classList.toggle("editing-mode");
+        const isEditing = document.body.classList.contains("editing-mode");
+        editModeBtn.textContent = isEditing ? "\u2713 Done" : "\u270E Edit posts";
+    });
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8UWvu":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "deletePost", ()=>deletePost);
+var _deletePostsApi = require("../../api/posts/deletePostsApi");
+var _renderPosts = require("./renderPosts");
+const deletePost = async (id)=>{
+    try {
+        const response = await (0, _deletePostsApi.deletePostsApi)(id);
+        if (!response.ok) throw new Error("Failed to delete the post");
+        await (0, _renderPosts.renderPosts)();
+    } catch (error) {
+        console.error("Error deleting:", error);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./renderPosts":"lY636","../../api/posts/deletePostsApi":"cdmyz"}],"cdmyz":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "deletePostsApi", ()=>deletePostsApi);
+const deletePostsApi = async (id)=>{
+    try {
+        return await fetch(`http://localhost:3000/posts/${id}`, {
+            method: "DELETE"
+        });
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fiKh9":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "startPostEditing", ()=>startPostEditing);
+var _updatePostsApi = require("../../api/posts/updatePostsApi");
+var _renderPosts = require("./renderPosts");
+const startPostEditing = ()=>{
+    document.addEventListener("click", async (event)=>{
+        const editBtn = event.target.closest(".posts__edit");
+        if (editBtn) {
+            const postItem = editBtn.closest(".posts__item");
+            if (postItem.classList.contains("text-editing")) return;
+            const title = postItem.querySelector(".posts__title");
+            const description = postItem.querySelector(".posts__description");
+            title.contentEditable = "true";
+            description.contentEditable = "true";
+            title.classList.add("text-editable");
+            description.classList.add("text-editable");
+            postItem.classList.add("text-editing");
+            return;
+        }
+        const saveBtn = event.target.closest(".posts__save");
+        if (!saveBtn) return;
+        const postItem = saveBtn.closest(".posts__item");
+        const title = postItem.querySelector(".posts__title");
+        const description = postItem.querySelector(".posts__description");
+        const img = postItem.querySelector(".posts__img");
+        const post = {
+            title: title.textContent.trim(),
+            description: description.textContent.trim(),
+            img: postItem.dataset.postImg,
+            category: postItem.dataset.postCategory
+        };
+        if (!post.title || !post.description) {
+            alert("Fill in the title and description");
+            return;
+        }
+        try {
+            saveBtn.disabled = true;
+            const response = await (0, _updatePostsApi.updatePostsApi)(postItem.dataset.postId, post);
+            if (!response || !response.ok) throw new Error("Failed to save the post");
+            await (0, _renderPosts.renderPosts)();
+        } catch (error) {
+            console.error(error);
+            alert("Save error");
+        } finally{
+            saveBtn.disabled = false;
+        }
+    });
+    // Выбор новой фотографии
+    document.addEventListener("change", (event)=>{
+        if (!event.target.matches(".posts__img-input")) return;
+        const file = event.target.files[0];
+        if (!file) return;
+        if (!file.type.startsWith("image/")) {
+            alert("\u0412\u044B\u0431\u0435\u0440\u0438 \u0444\u0430\u0439\u043B \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F");
+            event.target.value = "";
+            return;
+        }
+        // Ограничиваем размер, чтобы не перегружать json-server
+        if (file.size > 1048576) {
+            alert("\u0412\u044B\u0431\u0435\u0440\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u0434\u043E 1 \u041C\u0411");
+            event.target.value = "";
+            return;
+        }
+        const postItem = event.target.closest(".posts__item");
+        const img = postItem.querySelector(".posts__img");
+        const reader = new FileReader();
+        reader.onload = ()=>{
+            img.src = reader.result;
+            postItem.dataset.postImg = reader.result;
+        };
+        reader.readAsDataURL(file);
+    });
+};
+
+},{"../../api/posts/updatePostsApi":"cxdpl","./renderPosts":"lY636","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cxdpl":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "updatePostsApi", ()=>updatePostsApi);
+const updatePostsApi = async (id, post)=>{
+    try {
+        return await fetch(`http://localhost:3000/posts/${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(post)
+        });
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2Hgdr":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "renderUsersPage", ()=>renderUsersPage);
+var _authModalJs = require("./authModal.js");
+const renderUsersPage = ()=>{
+    (0, _authModalJs.startAuthModalEvents)();
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./authModal.js":"gDPvP"}],"gDPvP":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "startAuthModalEvents", ()=>startAuthModalEvents);
+var _loginJs = require("./login.js");
+var _registerJs = require("./register.js");
+const startAuthModalEvents = ()=>{
+    const openButton = document.querySelector(".header__button");
+    const modal = document.querySelector("[data-auth-modal]");
+    const closeButton = document.querySelector("[data-auth-close]");
+    const loginForm = document.querySelector("[data-login-form]");
+    const registerForm = document.querySelector("[data-register-form]");
+    const message = document.querySelector("[data-auth-message]");
+    const loginTab = document.querySelector('[data-auth-tab="login"]');
+    const registerTab = document.querySelector('[data-auth-tab="register"]');
+    if (!openButton || !modal || !closeButton || !loginForm || !registerForm || !loginTab || !registerTab) return;
+    // Приветствие после успешной регистрации или входа
+    const showWelcome = (name)=>{
+        localStorage.setItem("currentUser", name);
+        modal.classList.remove("is-open");
+        const headerLogin = document.querySelector(".header__log-in");
+        headerLogin.innerHTML = `
+    <button class="header__button header__welcome" type="button">
+      Hi, ${name}!
+    </button>
+  `;
+        const welcomeButton = headerLogin.querySelector(".header__welcome");
+        welcomeButton.addEventListener("click", ()=>{
+            modal.classList.add("is-open");
+        });
+    };
+    // Открытие окна
+    openButton.addEventListener("click", ()=>{
+        modal.classList.add("is-open");
+        document.body.classList.add("no-scroll");
+        document.documentElement.classList.add("no-scroll");
+    });
+    // Закрытие окна
+    closeButton.addEventListener("click", ()=>{
+        modal.classList.remove("is-open");
+        document.body.classList.remove("no-scroll");
+        document.documentElement.classList.remove("no-scroll");
+    });
+    // Переключение на Log in
+    loginTab.addEventListener("click", ()=>{
+        loginForm.hidden = false;
+        registerForm.hidden = true;
+        loginTab.classList.add("active");
+        registerTab.classList.remove("active");
+        if (message) message.textContent = "";
+    });
+    // Переключение на Register
+    registerTab.addEventListener("click", ()=>{
+        loginForm.hidden = true;
+        registerForm.hidden = false;
+        registerTab.classList.add("active");
+        loginTab.classList.remove("active");
+        if (message) message.textContent = "";
+    });
+    // Регистрация
+    registerForm.addEventListener("submit", async (event)=>{
+        event.preventDefault();
+        const formData = new FormData(registerForm);
+        const newUser = {
+            name: formData.get("name").trim(),
+            email: formData.get("email").trim(),
+            password: formData.get("password")
+        };
+        const user = await (0, _registerJs.registerUser)(newUser);
+        if (user) {
+            showWelcome(user.name);
+            registerForm.reset();
+        } else if (message) message.textContent = "This email may already be registered. Please check your details.";
+    });
+    // Вход
+    loginForm.addEventListener("submit", async (event)=>{
+        event.preventDefault();
+        const formData = new FormData(loginForm);
+        const loginData = {
+            email: formData.get("email").trim(),
+            password: formData.get("password")
+        };
+        const user = await (0, _loginJs.loginUser)(loginData);
+        if (user) {
+            showWelcome(user.name);
+            loginForm.reset();
+        } else if (message) message.textContent = "Invalid email or password!";
+    });
+    const savedUser = localStorage.getItem("currentUser");
+    if (savedUser) showWelcome(savedUser);
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./register.js":"6CtMQ","./login.js":"eExDf"}],"6CtMQ":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "registerUser", ()=>registerUser);
+var _getUsersApiJs = require("../../api/users/getUsersApi.js");
+var _addUsersApiJs = require("../../api/users/addUsersApi.js");
+const registerUser = async (newUser)=>{
+    try {
+        const users = await (0, _getUsersApiJs.getUsersApi)();
+        if (!Array.isArray(users)) {
+            console.log("\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0441\u043F\u0438\u0441\u043E\u043A \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439");
+            return;
+        }
+        const existingUser = users.find((user)=>user.email === newUser.email);
+        if (existingUser) return;
+        const user = await (0, _addUsersApiJs.addUsersApi)(newUser);
+        if (user) return user;
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"../../api/users/getUsersApi.js":"lzV8g","../../api/users/addUsersApi.js":"fujma","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lzV8g":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getUsersApi", ()=>getUsersApi);
+const getUsersApi = async ()=>{
+    try {
+        const response = await fetch("http://localhost:3000/users");
+        const users = await response.json();
+        return users;
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fujma":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addUsersApi", ()=>addUsersApi);
+const addUsersApi = async (newUser)=>{
+    try {
+        const options = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newUser)
+        };
+        const response = await fetch("http://localhost:3000/users", options);
+        return await response.json();
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eExDf":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "loginUser", ()=>loginUser);
+var _getUsersApiJs = require("../../api/users/getUsersApi.js");
+const loginUser = async (loginData)=>{
+    try {
+        const users = await (0, _getUsersApiJs.getUsersApi)();
+        if (!Array.isArray(users)) {
+            console.log("\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439");
+            return;
+        }
+        const existingUser = users.find((user)=>user.email === loginData.email);
+        if (!existingUser || existingUser.password !== loginData.password) return;
+        return existingUser;
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
+},{"../../api/users/getUsersApi.js":"lzV8g","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire4c9f", {})
 
 //# sourceMappingURL=mini-blog-crud.31b563d9.js.map

@@ -78,6 +78,113 @@ header .header__content .logo__container .logo:after {
   height: 70px;
 }
 
+.header__icon {
+  background: none;
+  width: 50px;
+  height: 50px;
+}
+
+.posts__item {
+  position: relative;
+}
+
+.posts__edit, .posts__delete {
+  z-index: 10;
+  color: #69de2f;
+  cursor: pointer;
+  background: #080808;
+  border: 1px solid #69de2f;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  transition: all .3s;
+  display: none;
+  position: absolute;
+  top: 10px;
+}
+
+.posts__edit {
+  right: 52px;
+}
+
+.posts__delete {
+  font-size: 24px;
+  right: 10px;
+}
+
+.editing-mode .posts__edit, .editing-mode .posts__delete {
+  display: flex;
+}
+
+.posts__edit:hover, .posts__delete:hover {
+  color: #000;
+  background: #69de2f;
+}
+
+.posts__save {
+  z-index: 10;
+  color: #69de2f;
+  cursor: pointer;
+  background: #080808;
+  border: 1px solid #69de2f;
+  border-radius: 20px;
+  padding: 8px 12px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.posts__item.text-editing .posts__save {
+  display: block;
+}
+
+.posts__item.text-editing .posts__edit {
+  display: none;
+}
+
+.text-editable {
+  outline-offset: 4px;
+  cursor: text;
+  border-radius: 3px;
+  outline: 1px dashed #69de2f;
+}
+
+.posts__save:hover {
+  color: #000;
+  background: #69de2f;
+}
+
+.posts__save:disabled {
+  opacity: .5;
+  cursor: wait;
+}
+
+.posts__change-img {
+  z-index: 20;
+  color: #69de2f;
+  cursor: pointer;
+  background: #080808;
+  border: 1px solid #69de2f;
+  border-radius: 20px;
+  padding: 8px 12px;
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 10px;
+}
+
+.editing-mode .posts__item.text-editing .posts__change-img {
+  display: block;
+}
+
+.posts__change-img:hover {
+  color: #000;
+  background: #69de2f;
+}
+
 .hero {
   color: #fff;
   -webkit-backdrop-filter: blur(16px);

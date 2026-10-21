@@ -1,0 +1,19 @@
+body {
+    background-image: url("../img/croco.png");
+     background-size: 100%;
+  background-attachment: fixed;
+    margin: 0;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+
+}
