@@ -30,9 +30,12 @@ export const startModalEvents = () => {
       openModal();
     });
   });
+  console.log(closeButton);
 
-  closeButton.addEventListener("click", closeModal);
-  backdrop.addEventListener("click", closeModal);
+  if (closeButton !== null) {
+    closeButton.addEventListener("click", closeModal);
 
+    backdrop.addEventListener("click", closeModal);
+  }
   return closeModal;
 };

@@ -7,21 +7,19 @@ const lists = {
   juice: document.querySelector(".posts__container-juice .posts__list"),
 };
 
-export  const renderPosts = async () => {
-    const data = await getPostsApi();
-     Object.values(lists).forEach((list) => {
-    list.innerHTML = "";
-  });
+export const renderPosts = async () => {
+  await getPostsApi().then((response) => {
+    console.log(response)
+    Object.values(lists).forEach((list) => {
+      lists.innerHTML = "";
+    });
 
-  data.forEach((post) => {
-    const list = lists[post.category];
+    response.forEach((post) => {
+      const list = lists[post.category];
 
-    if (list) {
-      list.insertAdjacentHTML(
-        "beforeend",
-        makePostsList([post])
-      );
-    }
+      if (list) {
+        list.insertAdjacentHTML("beforeend", makePostsList([post]));
+      }
+    });
   });
-    
-}
+};

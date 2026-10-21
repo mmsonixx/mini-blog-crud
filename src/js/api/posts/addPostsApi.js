@@ -4,7 +4,7 @@ try {
         method: "POST",
         body: JSON.stringify(newPost),
     };
-    await fetch("http://localhost:3000/posts", options);
+   return await fetch("http://localhost:3000/posts", options).then((response) => response.json());
 } catch (error) {
     console.log(error.message);
 }
