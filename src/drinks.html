@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="stylesheet" href="./sass/main.scss">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +19,7 @@
     <title>Document</title>
   </head>
   <body>
-   <header class="header">
+    <header class="header">
       <div class="header__content">
         <div class="logo__wrapper">
           <div class="logo__container">
@@ -24,148 +27,117 @@
               ><img src=".//img/monster-logo.png" alt=""
             /></a>
           </div>
-           </div>
-          <div class="header__log-in">
-            <button class="header__button">
-              <svg class="header__icon">
-                <use href="./img/icons/symbol-defs.svg#icon-user"></use>
-              </svg>
-            </button>
+        </div>
+        <div class="header__log-in">
+          <button class="header__button">
+            <svg class="header__icon">
+              <use href="./img/icons/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="auth-modal" data-auth-modal>
+          <div class="auth-modal__content">
+            <button class="auth-modal__close" data-auth-close>&times;</button>
+
+            <div class="auth-modal__tabs">
+              <button type="button" data-auth-tab="register" class="active">
+                Register
+              </button>
+
+              <button type="button" data-auth-tab="login">Log in</button>
+            </div>
+
+            <!-- Регистрация показывается первой -->
+            <form data-register-form>
+              <input type="text" name="name" placeholder="Your name" required />
+
+              <input type="email" name="email" placeholder="Email" required />
+
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+
+              <button type="submit">Create account</button>
+            </form>
+
+            <!-- Вход скрыт при открытии -->
+            <form data-login-form hidden>
+              <input type="email" name="email" placeholder="Email" required />
+
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+
+              <button type="submit">Log in</button>
+            </form>
+
+            <p data-auth-message></p>
           </div>
-          
-<div class="auth-modal" data-auth-modal>
-  <div class="auth-modal__content">
-    <button class="auth-modal__close" data-auth-close>&times;</button>
-
-    
-
-    <div class="auth-modal__tabs">
-      <button type="button" data-auth-tab="register" class="active">
-        Register
-      </button>
-
-      <button type="button" data-auth-tab="login">
-        Log in
-      </button>
-    </div>
-
-    <!-- Регистрация показывается первой -->
-    <form data-register-form>
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name"
-        required
-      />
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
-
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        required
-      />
-
-      <button type="submit">Create account</button>
-    </form>
-
-    <!-- Вход скрыт при открытии -->
-    <form data-login-form hidden>
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
-
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        required
-      />
-
-      <button type="submit">Log in</button>
-    </form>
-
-    <p data-auth-message></p>
-  </div>
-</div>
-
-       
+        </div>
       </div>
     </header>
 
+    <section class="posts">
+      <button class="posts__edit-mode" type="button">✎ Edit posts</button>
+      <h2 class="title__monster-energy">Monster Energy</h2>
+      <div class="posts__container" data-category="energy">
+        <ul class="posts__list"></ul>
 
-<section class="posts">
-<button class="posts__edit-mode" type="button">
-  ✎ Edit posts
-</button>
-   <h2 class="title__monster-energy">Monster Energy</h2>
-  <div class="posts__container" data-category="energy">
-    <ul class="posts__list"></ul>
+        <button class="posts__add-btn" type="button" aria-label="Add a drink">
+          +
+        </button>
+      </div>
+      <h2 class="title__monster-coffe">Java Monster</h2>
+      <div class="posts__container-java" data-category="java">
+        <ul class="posts__list"></ul>
 
-    <button class="posts__add-btn" type="button" aria-label="Add a drink">
-      +
-    </button>
-  </div>
- <h2 class="title__monster-coffe">Java Monster</h2>
-  <div class="posts__container-java" data-category="java">
-    <ul class="posts__list"></ul>
+        <button class="posts__add-btn" type="button" aria-label="Add a drink">
+          +
+        </button>
+      </div>
+      <h2 class="title__monster-juice">Juice Monster</h2>
+      <div class="posts__container-juice" data-category="juice">
+        <ul class="posts__list"></ul>
 
-    <button class="posts__add-btn" type="button" aria-label="Add a drink">
-      +
-    </button>
-  </div>
- <h2 class="title__monster-juice">Juice Monster</h2>
-  <div class="posts__container-juice" data-category="juice">
-    <ul class="posts__list"></ul>
+        <button class="posts__add-btn" type="button" aria-label="Add a drink">
+          +
+        </button>
+      </div>
+    </section>
 
-    <button class="posts__add-btn" type="button" aria-label="Add a drink">
-      +
-    </button>
-  </div>
-</section>
+    <div class="wrapper__form" data-addPosts>
+      <div class="modal-backdrop" data-backdrop></div>
 
+      <div class="wrapper__form-card">
+        <button type="button" class="close-modal">×</button>
 
-<div class="wrapper__form" data-addPosts>
-  <div class="modal-backdrop" data-backdrop></div>
+        <h2>Add post</h2>
 
-  <div class="wrapper__form-card">
-    <button type="button" class="close-modal">×</button>
+        <form data-addPost-form>
+          <label class="post__title" for="post-title">Name of the energy</label>
+          <input id="post-title" type="text" name="title" />
 
-    <h2>Add post</h2>
+          <label class="post__title" for="post-img">Link to the picture</label>
+          <input id="post-img" type="text" name="img" />
 
-    <form data-addPost-form>
-      <label class="post__title" for="post-title">Name of the energy</label>
-    <input  id="post-title" type="text" name="title" />
+          <label class="post__title" for="post-description">Description</label>
+          <input id="post-description" type="text" name="description" />
 
-    <label class="post__title" for="post-img">Link to the picture</label>
-    <input id="post-img" type="text" name="img" />
+          <input type="hidden" name="category" />
 
-    <label class="post__title" for="post-description">Description</label>
-    <input id="post-description" type="text" name="description" />
+          <button type="submit" data-button>Send</button>
+        </form>
+      </div>
+    </div>
 
-    <input type="hidden" name="category" />
-
-      <button type="submit" data-button>Send</button>
-    </form>
-  </div>
-</div>
-
-
-
-
-
-
-
-        <footer class="footer">
+    <footer class="footer">
       <div class="footer__container">
         <a href="#" class="footer__logo">
           <img class="footer__logo" src="./img/monster-logo.png" alt="" />
