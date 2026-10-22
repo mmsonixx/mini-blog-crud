@@ -6,15 +6,21 @@ import { deletePost } from "./deletePost";
 import { startPostEditing } from "./editPost";
 
 const startEvents = () => {
-   const form = document.querySelector("[data-addPost-form]");
+  const form = document.querySelector("[data-addPost-form]");
+
+  console.log("Form:", form);
+  console.log("Edit button:", document.querySelector(".posts__edit-mode"));
+
   const closeModal = startModalEvents();
 
   startEditMode();
   startPostEditing();
 
-  form.addEventListener("submit", (event) => {
-    addPost(event, closeModal);
-  });
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      addPost(event, closeModal);
+    });
+  }
 
   document.addEventListener("click", (event) => {
     const deleteBtn = event.target.closest(".posts__delete");

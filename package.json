@@ -16,8 +16,8 @@
   "type": "module",
   "scripts": {
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /mini-blog-crud/",
-    "deploy": "gh-pages -d dist",
+    "build": "parcel build src/index.html src/drinks.html --dist-dir dist",
+   "deploy": "gh-pages -d dist --no-history --add",
     "predeploy": "npm run build",
     "server": "npx json-server db.json",
     "sass-compile": "sass src/sass/main.scss dist/css/style.css",

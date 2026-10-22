@@ -8,18 +8,25 @@ const lists = {
 };
 
 export const renderPosts = async () => {
-  await getPostsApi().then((response) => {
-    console.log(response)
-    Object.values(lists).forEach((list) => {
-      lists.innerHTML = "";
-    });
+  const response = await getPostsApi();
 
-    response.forEach((post) => {
-      const list = lists[post.category];
+  console.log("Posts:", response);
+  console.log("Array:", Array.isArray(response));
 
-      if (list) {
-        list.insertAdjacentHTML("beforeend", makePostsList([post]));
-      }
-    });
+  if (!Array.isArray(response)) {
+    console.error("Posts is not an array:", response);
+    return;
+  }
+
+  Object.values(lists).forEach((list) => {
+    if (list) list.innerHTML = "";
+  });
+
+  response.forEach((post) => {
+    const list = lists[post.category];
+
+    if (list) {
+      list.insertAdjacentHTML("beforeend", makePostsList([post]));
+    }
   });
 };
