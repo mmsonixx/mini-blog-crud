@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/mmsonixx/mini-blog-crud",
+  "homepage": "https://mmsonixx.github.io/mini-blog-crud/",
   "bugs": {
     "url": "https://github.com/mmsonixx/mini-blog-crud/issues"
   },
@@ -16,7 +16,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html src/drinks.html --dist-dir dist",
+    "build": "parcel build src/index.html src/drinks.html --dist-dir dist --public-url ./",
    "deploy": "gh-pages -d dist --no-history --add",
     "predeploy": "npm run build",
     "server": "npx json-server db.json",
