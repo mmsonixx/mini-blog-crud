@@ -1,0 +1,132 @@
+.wrapper__form {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.wrapper__form.is-open {
+  display: block;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.wrapper__form-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 90%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 30px;
+
+  
+   
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  border: none;
+  background: transparent;
+  color: #e9f0e8;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+
+.wrapper__form-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+width: 500px;
+ 
+  padding: 35px 30px;
+  color: #fff;
+  background: transparent;
+ 
+
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.6) inset,
+    0 0 40px rgba(255, 255, 255, 0.15) inset;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+
+.wrapper__form-card h2 {
+  margin: 0 0 25px;
+  color: #e6eae5;
+  font-family: "teko", sans-serif;
+  font-size: 28px;
+  text-align: center;
+ 
+}
+
+
+[data-addPost-form] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+  .post__title {
+    font-size: 20px;
+  margin-bottom: 5px;
+  color: #f4ecec; 
+  }
+
+  [data-addPost-form] input {
+     padding: 5px 10px;
+      
+  width: 400px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  color: rgba(245, 245, 249, 0.855);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.6) inset,
+    0 0 40px rgba(255, 255, 255, 0.15) inset;
+  border: 1px solid rgb(176, 176, 183);
+  transition:
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+  border-radius: 3px;
+  }
+    [data-addPost-form]  button {
+       
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 5px 40px;
+  background-color: transparent;  
+   font-family: "teko", sans-serif;
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.6) inset,
+    0 0 40px rgba(255, 255, 255, 0.15) inset;
+  border: 1px solid rgb(176, 176, 183);
+  border-radius: 3px;
+  color: #ede2e2;
+  transition:
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+    }

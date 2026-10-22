@@ -1,0 +1,263 @@
+.posts {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.posts__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  min-height: 300px;
+  padding: 10px 50px;
+
+  transform: rotate(-3deg);
+  width: 105%;
+  margin-left: -2%;
+  
+}
+
+.title__monster-energy {
+     position: relative;
+     left: 100px;
+  transform: rotate(-3deg);
+
+color: #ebefea;
+  font-family: "teko", sans-serif;
+      text-transform: uppercase;
+      font-size: 60px;
+      width: 500px;
+}
+.posts__container-java {
+    margin-top: 100px;
+    position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  min-height: 300px;
+  padding: 10px 50px;
+  transform: rotate(3deg);
+  width: 105%;
+ margin-left: -2%;
+ 
+}
+
+.title__monster-coffe {
+    position: relative;
+    top: 155px;
+    left: 950px;
+  transform: rotate(4deg);
+
+color: #ebefea;
+  font-family: "teko", sans-serif;
+      text-transform: uppercase;
+      font-size: 60px;
+}
+.posts__container-juice {
+    position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  min-height: 300px;
+  padding: 20px 50px;
+
+  transform: rotate(-3deg);
+  width: 105%;
+  margin-left: -2%;
+  margin-top: 100px;
+  margin-left: -2%;
+}
+
+.title__monster-juice{
+    position: relative;
+    top: 95px;
+     left: 100px;
+  transform: rotate(-3deg);
+
+color: #ebefea;
+  font-family: "teko", sans-serif;
+      text-transform: uppercase;
+      font-size: 60px;
+}
+.posts__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  list-style: none;
+  padding: 20px;
+  
+}
+
+.posts__item {
+  width: 250px;
+  height: 350px;
+
+
+  background-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+
+  transform: rotate(0.1deg);
+
+  perspective: 1000px;
+}
+
+/* Контейнер, который вращается */
+.posts__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+
+/* Переворот при наведении */
+.posts__item:hover .posts__card {
+  transform: rotateY(180deg);
+}
+
+/* Обе стороны карточки */
+.posts__front,
+.posts__back {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+
+}
+.posts__container .posts__front,
+.posts__container .posts__back {
+  box-shadow:
+    0 0 15px rgba(64, 68, 60, 0.6) inset,
+    0 0 25px rgba(52, 72, 48, 0.3);
+
+  border: 1px solid rgba(39, 187, 10, 0.445);
+}
+
+/* COFFEE — коричневый */
+.posts__container-java .posts__front,
+.posts__container-java .posts__back {
+  box-shadow:
+    0 0 15px rgba(68, 65, 60, 0.6) inset,
+    0 0 25px rgba(72, 65, 48, 0.3);
+
+  border: 1px solid rgba(187, 140, 10, 0.445);
+}
+
+/* JUICE — оранжевый */
+.posts__container-juice .posts__front,
+.posts__container-juice .posts__back {
+  box-shadow:
+    0 0 15px rgba(68, 62, 60, 0.6) inset,
+    0 0 25px rgba(72, 53, 48, 0.3);
+
+  border: 1px solid rgba(187, 81, 10, 0.445);
+}
+
+/* Передняя сторона — картинка */
+.posts__front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #050805;
+}
+
+.posts__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Задняя сторона — текст */
+.posts__back {
+  transform: rotateY(180deg);
+
+  display: flex;
+  flex-direction: column;
+  
+
+  padding: 30px;
+  text-align: center;
+
+  background: #080d08;
+}
+
+.posts__title {
+  color: #fff;
+   font-family: "teko", sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.posts__description {
+ color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.posts__add-btn {
+    
+  flex-shrink: 0;
+
+  width: 65px;
+  height: 65px;
+ 
+  border-radius: 50%;
+
+  background: #050805;
+ 
+  font-size: 42px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.posts__add-btn:hover {
+  transform: scale(1.1);
+}
+
+.posts__container .posts__add-btn {
+ border: 2px solid #39ff14;
+  color: #69de2f;
+}
+
+.posts__container .posts__add-btn:hover {
+  background: #69de2f;
+  color: #000;
+}
+
+.posts__container-java .posts__add-btn {
+ border: 2px solid #c58b52;
+  color: #c58b52;
+}
+
+.posts__container-java .posts__add-btn:hover {
+  background: #c49645;;
+  color: #000;
+}
+
+.posts__container-juice .posts__add-btn {
+ border: 2px solid #ff6533;
+  color: #ff6533;
+}
+
+.posts__container-juice .posts__add-btn:hover {
+  background: #ff6533;
+  color: #000;
+}

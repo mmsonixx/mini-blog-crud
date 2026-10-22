@@ -1,0 +1,85 @@
+.header {
+  transition: transform 0.408s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  z-index: 9999;
+  max-width: 2400px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #171717;
+  margin: auto;
+}
+
+header .header__content {
+
+  min-height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  width: 100%;
+}
+
+header .header__content .logo__wrapper {
+  justify-self: center;
+  margin: auto auto auto 0;
+  max-width: 240px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header .header__content .logo__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: top 1s ease 0s;
+}
+
+header .header__content .logo__container .logo {
+  background-color: #171717;
+  padding: 12px 30px;
+  display: block;
+  position: relative;
+  z-index: 9999;
+}
+
+header .header__content .logo__container .logo::after {
+  position: absolute;
+  content: "";
+  background-color: #171717;
+  right: -19px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+}
+.header a img {
+  width: 170px;
+  height: 70px;
+}
+
+.header__log-in {
+  background: transparent;
+  border: none;
+
+}
+
+.header__button {
+  background: transparent;
+margin-right: 50px;
+  cursor: pointer;
+}
+
+.header__icon {
+ width: 40px;
+  height: 40px;
+  background: transparent;
+  color: #fff;
+ 
+ 
+}
+

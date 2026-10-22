@@ -1,0 +1,48 @@
+.footer {
+  position: relative;
+  margin-top: 100px;
+  padding: 70px 40px 30px;
+  color: #fff;
+  background: #050705;
+width: 105%;
+  /* Косой срез сверху справа */
+  clip-path: polygon(
+    0 8%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+ 
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.footer__logo {
+  
+width: 200px;
+height: 100px;
+}
+
+
+
+.footer__text {
+  margin-top: 12px;
+  color: #8d968b;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+
+
+.footer__copyright {
+  padding-top: 20px;
+  border-top: 1px solid rgba(168, 255, 96, 0.2);
+  color: #697067;
+  font-size: 12px;
+}
