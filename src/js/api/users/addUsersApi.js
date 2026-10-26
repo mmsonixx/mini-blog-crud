@@ -8,7 +8,7 @@ export const addUsersApi = async (newUser) => {
       body: JSON.stringify(newUser),
     };
 
-    const response = await fetch("http://localhost:3000/users", options);
+    const response = await fetch("https://6adf971e8e42963c8d5e3348.mockapi.io/users", options);
     return await response.json();
   } catch (error) {
     console.log(error.message);
