@@ -1,0 +1,9 @@
+@use './base/reset';
+@use "./base/common";
+@use "./components/header";
+@use "./components/hero";
+@use "./components/posts";
+@use "./components/postsModal";
+@use  "./components/editPosts";
+@use "./components/_authModal";
+@use "./components/footer";

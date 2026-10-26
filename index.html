@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=stylesheet href=mini-blog-crud.38df43d6.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&amp;family=Cherry+Cream+Soda&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=Playpen+Sans:wght@100..800&amp;family=Teko:wght@300..700&amp;display=swap" rel=stylesheet><title>Document</title><body>
+    <header class=header>
+      <div class=header__content>
+        <div class=logo__wrapper>
+          <div class=logo__container>
+            <a href=index.html class=logo><img src=monster-logo.a1ba048e.png alt></a>
+          </div>
+        </div>
+        <div class=header__log-in>
+          <button class=header__button>
+            <svg class=header__icon><use href=symbol-defs.c5b0f01c.svg#icon-user /></svg>
+          </button>
+        </div>
+
+        <div class=auth-modal data-auth-modal>
+          <div class=auth-modal__content>
+            <button class=auth-modal__close data-auth-close>×</button>
+
+            <div class=auth-modal__tabs>
+              <button type=button data-auth-tab=register class=active>
+                Register
+              </button>
+
+              <button type=button data-auth-tab=login>Log in</button>
+            </div>
+
+            
+            <form data-register-form>
+              <input name=name placeholder="Your name" required>
+
+              <input type=email name=email placeholder=Email required>
+
+              <input type=password name=password placeholder=Password required>
+
+              <button>Create account</button>
+            </form>
+
+            
+            <form data-login-form hidden>
+              <input type=email name=email placeholder=Email required>
+
+              <input type=password name=password placeholder=Password required>
+
+              <button>Log in</button>
+            </form>
+
+            <p data-auth-message></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class=hero>
+      <h2 class=hero__title>Monster Energy <span>Drinks</span></h2>
+      <ul class=hero__list>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Monster Energy</h3>
+          <p class=hero__info>Original</p>
+          <img src=monster-energy-original.1a7ddd1e.webp alt class=hero__img>
+        </li>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Monster Ultra</h3>
+          <p class=hero__info>Zero Sugar</p>
+          <img src=white-monster.0fd13155.webp alt class=hero__img>
+        </li>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Juice Monster</h3>
+          <p class=hero__info>Juice + Energy</p>
+          <img src=mango-loco.73a27bdc.webp alt class=hero__img>
+        </li>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Monster Energy</h3>
+          <p class=hero__info>Lando Norris</p>
+          <img src=lando-norris.e09f04d5.webp alt class=hero__img>
+        </li>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Juice Monster</h3>
+          <p class=hero__info>Bad Apple</p>
+          <img src=bad-apple.b159ba80.webp alt class=hero__img>
+        </li>
+        <li class=hero__item>
+          <h3 class=hero__subtitle>Java Monster</h3>
+          <p class=hero__info>Coffee + Energy</p>
+          <img src=dubai-chocolate.f90054f2.webp alt class=hero__img>
+        </li>
+      </ul>
+
+      <a href=drinks.html class=hero__button aria-label=More>
+        →
+      </a>
+    </section>
+
+    <footer class=footer>
+      <div class=footer__container>
+        <a href=# class=footer__logo>
+          <img class=footer__logo src=monster-logo.a1ba048e.png alt>
+        </a>
+
+        <p class=footer__text>Unleash the Beast.</p>
+
+        <p class=footer__copyright>
+          © 2026 — Fan-made project for educational purposes.<br>
+
+          Product information is based on the official Monster Energy website.
+          This website is not affiliated with or endorsed by Monster Energy.
+        </p>
+      </div>
+    </footer>
+    <script type=module src=mini-blog-crud.afb53d80.js></script>
+  
+
